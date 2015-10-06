@@ -6,11 +6,12 @@ RUN apt-get update && apt-get install -y \
     git \
     wget
 
+COPY .vimrc /root/.vimrc
+
 RUN wget -q -O /usr/bin/lein \
     https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
 RUN chmod 755 /usr/bin/lein
 ENV LEIN_ROOT=1
-ENV PATH /home/bin:$PATH
 RUN lein
 
 RUN mkdir -p /home/wkspace
