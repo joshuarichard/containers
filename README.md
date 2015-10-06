@@ -2,7 +2,7 @@
 Misc docker containers for fun
 
 # building/usage
-just git clone, and docker build
+just git clone and docker build
 
-# lein
-lein container for messing around w/ lein
+# overtone
+container with overtone and lein for messing around w/ sounds
